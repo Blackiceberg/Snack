@@ -1,3 +1,4 @@
+//Snack
 class Snake {
     constructor(size){
         this.x = 0;
@@ -11,5 +12,12 @@ class Snake {
     addBlock(x,y){
         const block = new Block(x, y, this.blockSize);
         this.blocks.push(block);
+    }
+
+    update(){
+        for(const block of this.blocks){
+            block.draw();
+
+        }
     }
 }

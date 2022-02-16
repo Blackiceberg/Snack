@@ -1,3 +1,4 @@
+//Block
 class Block {
     constructor(x, y, size){
     this.x = x;
